@@ -17,8 +17,75 @@
     --accent-orange: #E95E10;
     --accent-pink: #E5245E;
     --accent-purple: #591B98;
+
+    --font-family: "Open Sans", sans-serif;
+
+    --text-2xl: 700 2.25rem var(--font-family);
+    --text-xl: 700 2rem var(--font-family);
+    --text-lg: 700 1.75rem var(--font-family);
+    --text-hd: 700 1rem var(--font-family);
+    --text-sm: 400 1rem var(--font-family);
 }
 
 body {
   background-color: var(--background-default);
+}
+
+h1 {
+  font: var(--text-2xl);
+  color: var(--text-primary);
+}
+
+h2 {
+  font: var(--text-xl);
+  color: var(--text-primary);
+}
+
+ol {
+  font: var(--text-lg);
+  color: var(--text-secondary);
+}
+
+span {
+  font: var(--text-hd);
+  color: var(--accent-orange);
+  text-transform: uppercase;
+}
+
+p, i, ul, strong {
+  font: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+strong, ul li {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
+img {
+  border-radius: 1.75rem;
+  object-fit: contain;
+}
+
+li::marker {
+  color: var(--text-secondary);
+}
+
+#yonggungsa ul li:nth-child(1), #beomeo-sa ul li:nth-child(1) {
+  color: var(--accent-blue);
+}
+
+#yongdusan ul li:nth-child(1) {
+  color: var(--accent-purple);
+}
+
+#yongdusan ul li:nth-child(2) {
+  color: var(--accent-pink);
+}
+
+#yongdusan ul li:nth-child(3) {
+  color: var(--accent-orange);
 }
