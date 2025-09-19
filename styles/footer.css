@@ -1,0 +1,10 @@
+footer {
+  font-family: "Alice", serif;
+  line-height: 150%;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+footer img {
+  vertical-align: sub;
+}
